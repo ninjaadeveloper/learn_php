@@ -25,7 +25,7 @@ $stds = array('hamza', 'shehran', 70);
 
 // echo $stds[0];
 
-$cities = ["karachi", 'lahore', ',multan'];
+$cities = ["karachi",  'lahore', ',multan'];
 
 // var_dump($cities);
 
@@ -50,7 +50,7 @@ $students = [
     "std2" => ["mudassir", "suleman", "affan"],
 ];
 
-print_r($students);
+// print_r($students);
 
 
 // $students = [
@@ -60,3 +60,18 @@ print_r($students);
 
 // print_r($students['std1'][2][2]);
 
+
+
+$myname = "affan";
+
+
+// echo(strlen($myname));
+// echo(ucwords($myname));
+// echo(str_word_count($myname));
+// echo(strrev($myname));
+// echo (strpos($myname, 'n'));
+// $newname  = str_replace('n', 'a', $myname);
+
+// echo $newname;
+
+echo $myname[2];
