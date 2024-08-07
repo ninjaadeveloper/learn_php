@@ -29,7 +29,7 @@ function addTwoNumbers($num1, $num2): int
     return $num1 + $num2;
 }
 
-// echo (addTwoNumbers(50, 20));
+// echo (addTwo xsxNumbers(50, 20));
 
 
 $today1 = date("Y/d/m");
