@@ -10,7 +10,7 @@
 <body>
     <!-- method="GET"  -->
     <form action="data.php" method="POST">
-        <label for="name">Name</label>
+         <label for="name">Name</label>
         <input type="text" name="name"> <br>
         <label for="name">Age</label>
         <input type="number" name="age"> <br>
