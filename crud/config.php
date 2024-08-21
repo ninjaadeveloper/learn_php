@@ -5,8 +5,8 @@ $username = "root";
 $password = "";
 $database = "db_user";
 
-// $con = new mysqli($host, $username, $password, $database);
-$con = new mysqli('localhost', 'root', '', 'db_user');
+$con = new mysqli($host, $username, $password, $database);
+// $con = new mysqli('localhost', 'root', '', 'db_user');
 
 
 // if ($con) {
