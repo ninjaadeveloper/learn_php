@@ -13,12 +13,15 @@ include 'config.php';
 <body>
     <h1>CRUD</h1>
     <h2>Create User</h2>
-    <form action="createData.php" method="POST">
+    <form action="createData.php" method="POST" enctype="multipart/form-data">
         <label for="name"> Name:
             <input type="text" name="name">
         </label> <br>
         <label for="email"> Email:
             <input type="email" name="email">
+        </label> <br>
+        <label for="image"> Image:
+            <input type="file" name="image">
         </label> <br>
         <input type="submit" value="Submit">
     </form>
@@ -28,8 +31,10 @@ include 'config.php';
             <th>S.No</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Image</th>
             <th>Action</th>
         </thead>
+        
         <tbody>
 
             <?php
@@ -44,8 +49,11 @@ include 'config.php';
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td>
+                        <img src="<?php echo "upload/" . $row['image']; ?>" alt="abc" height="100" width="auto">
+                    </td>
+                    <td>
                         <a href="edit.php?userId=<?php echo $row['id']; ?>">Edit</a> |
-                        <a href="deleteData.php?userId=<?php echo $row['id']; ?>">Delete</a> 
+                        <a href="deleteData.php?userId=<?php echo $row['id']; ?>">Delete</a>
                     </td>
                 </tr>
 
